@@ -8,7 +8,7 @@ const authRoute = require('./routes/auth');
 const itemRoute = require('./routes/item');
 const chartRoute = require('./routes/chart');
 const mongoose = require('mongoose');
-app.use(express.json()); //Used to parse JSON bodies
+app.use(express.json()); //Used to parse JSON bodies(no need for body parsers anymore)
 app.use(morgan('common')); //morgan to log server actions
 
 //Connect to MongoDB
